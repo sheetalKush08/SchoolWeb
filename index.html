@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Bright Future Academy</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About School</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Shaping Minds, Building Futures</h2>
+            <p>Providing quality education since 1995</p>
+            <a href="#admission" class="btn">Enroll Now</a>
+        </div>
+    </section>
+
+    <!-- Subjects Cards Section -->
+    <section class="subjects">
+        <div class="container">
+            <h2 class="section-title">Our Core Subjects</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="science.jpg" alt="Science">
+                    </div>
+                    <div class="card-content">
+                        <h3>Science</h3>
+                        <p>Explore the wonders of the natural world through hands-on experiments and discovery.</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="math.jpg" alt="Math">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mathematics</h3>
+                        <p>Develop logical thinking and problem-solving skills with our comprehensive math program.</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="english.jpg" alt="English">
+                    </div>
+                    <div class="card-content">
+                        <h3>English</h3>
+                        <p>Master communication skills and explore world literature with our expert faculty.</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="hindi.jpg" alt="Hindi">
+                    </div>
+                    <div class="card-content">
+                        <h3>Hindi</h3>
+                        <p>Celebrate our rich linguistic heritage with comprehensive Hindi language education.</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form Section -->
+    <section id="admission" class="admission">
+        <div class="container">
+            <h2 class="section-title">Admission Form</h2>
+            <form id="admissionForm" class="admission-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="studentName">Student's Full Name</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="parentName">Parent/Guardian Name</label>
+                        <input type="text" id="parentName" name="parentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="relation">Relationship to Student</label>
+                        <select id="relation" name="relation" required>
+                            <option value="">Select</option>
+                            <option value="Father">Father</option>
+                            <option value="Mother">Mother</option>
+                            <option value="Guardian">Guardian</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="address">Full Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Class Applying For</label>
+                        <select id="class" name="class" required>
+                            <option value="">Select Class</option>
+                            <option value="Nursery">Nursery</option>
+                            <option value="KG">KG</option>
+                            <option value="Class 1">Class 1</option>
+                            <option value="Class 2">Class 2</option>
+                            <option value="Class 3">Class 3</option>
+                            <option value="Class 4">Class 4</option>
+                            <option value="Class 5">Class 5</option>
+                            <option value="Class 6">Class 6</option>
+                            <option value="Class 7">Class 7</option>
+                            <option value="Class 8">Class 8</option>
+                            <option value="Class 9">Class 9</option>
+                            <option value="Class 10">Class 10</option>
+                            <option value="Class 11">Class 11</option>
+                            <option value="Class 12">Class 12</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="btn submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Classes Information Section -->
+    <section class="classes-info">
+        <div class="container">
+            <h2 class="section-title">Our Classes</h2>
+            <div class="classes-container">
+                <div class="class-card">
+                    <h3>Pre-Primary (Nursery - KG)</h3>
+                    <p>Our play-based learning approach helps young children develop social, emotional, and cognitive skills in a nurturing environment.</p>
+                    <ul>
+                        <li>Age-appropriate activities</li>
+                        <li>Focus on language development</li>
+                        <li>Creative expression</li>
+                        <li>Basic numeracy skills</li>
+                    </ul>
+                </div>
+                <div class="class-card">
+                    <h3>Primary (Class 1 - 5)</h3>
+                    <p>Building strong foundations in core subjects while encouraging curiosity and independent thinking.</p>
+                    <ul>
+                        <li>Comprehensive curriculum</li>
+                        <li>Project-based learning</li>
+                        <li>Computer literacy</li>
+                        <li>Physical education</li>
+                    </ul>
+                </div>
+                <div class="class-card">
+                    <h3>Middle School (Class 6 - 8)</h3>
+                    <p>Transitioning to more specialized subjects with an emphasis on critical thinking and problem-solving.</p>
+                    <ul>
+                        <li>Subject specialist teachers</li>
+                        <li>Science and math labs</li>
+                        <li>Language electives</li>
+                        <li>Career guidance</li>
+                    </ul>
+                </div>
+                <div class="class-card">
+                    <h3>High School (Class 9 - 12)</h3>
+                    <p>Preparing students for higher education and professional careers with advanced coursework and career counseling.</p>
+                    <ul>
+                        <li>Stream specialization</li>
+                        <li>Competitive exam preparation</li>
+                        <li>Research opportunities</li>
+                        <li>College placement support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">What Parents Say</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="reviewer-img">
+                        <img src="https://source.unsplash.com/random/100x100/?portrait,woman" alt="Reviewer">
+                    </div>
+                    <div class="review-content">
+                        <p>"Bright Future Academy has provided my child with an excellent learning environment. The teachers are dedicated and the curriculum is well-structured."</p>
+                        <div class="reviewer-info">
+                            <h4>Mrs. Sharma</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-img">
+                        <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Reviewer">
+                    </div>
+                    <div class="review-content">
+                        <p>"The school focuses on holistic development. My son has not only excelled academically but also developed great interpersonal skills."</p>
+                        <div class="reviewer-info">
+                            <h4>Mr. Patel</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-img">
+                        <img src="https://source.unsplash.com/random/100x100/?portrait,woman,senior" alt="Reviewer">
+                    </div>
+                    <div class="review-content">
+                        <p>"As a grandparent, I appreciate the school's values and discipline. My granddaughter looks forward to school every day."</p>
+                        <div class="reviewer-info">
+                            <h4>Mrs. Gupta</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-img">
+                        <img src="https://source.unsplash.com/random/100x100/?portrait,businessman" alt="Reviewer">
+                    </div>
+                    <div class="review-content">
+                        <p>"The STEM program is exceptional. My daughter has developed a strong interest in science thanks to the school's innovative teaching methods."</p>
+                        <div class="reviewer-info">
+                            <h4>Mr. Singh</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Bright Future Academy</h3>
+                    <p>Committed to excellence in education since 1995. Our mission is to nurture young minds and prepare them for the challenges of tomorrow.</p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> +91 9876543210</span>
+                        <span><i class="fas fa-envelope"></i> info@brightfutureacademy.edu</span>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#admission">Admissions</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <input type="email" placeholder="Your Email" class="text-input contact-input">
+                        <textarea placeholder="Your Message" class="text-input contact-input"></textarea>
+                        <button type="submit" class="btn btn-small">
+                            <i class="fas fa-paper-plane"></i> Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="address">
+                    <p>123 Education Lane, Knowledge City, India - 110001</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 Bright Future Academy. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
